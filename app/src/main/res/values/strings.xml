@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Contact List</string>
+    <string name="title_activity_main2">ActivityContacts</string>
+    <string name="ID">idkey</string>
+</resources>

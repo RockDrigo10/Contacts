@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    tools:context="com.example.admin.webviewsandsqllite.MainActivity">
+        <ImageButton
+            android:id="@+id/ibImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@color/colorWhite"
+            android:onClick="getPhoto"
+            android:layout_weight="1"
+            android:src="@drawable/camera"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1.5">
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="30dp"
+            android:textStyle="bold|italic"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            />
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:inputType="textEmailAddress"
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+            />
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textSize="30dp"
+
+            />
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+            android:text="Phone: "
+            />
+        <EditText
+            android:id="@+id/etNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:inputType="phone"
+            />
+        <TextView
+            android:id="@+id/tvSocial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Social Security: "
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+            />
+        <EditText
+            android:id="@+id/etSocial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:inputType="number"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSend"
+            android:src="@drawable/save"
+            android:onClick="saveContact"
+            android:background="@color/colorGray"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</LinearLayout>
+
+        <!--<WebView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/wvPrincipal"></WebView>-->
+
